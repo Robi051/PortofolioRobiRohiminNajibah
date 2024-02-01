@@ -1,0 +1,250 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+ 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.burger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        border-bottom: 1px solid #555;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+/* Existing styles remain unchanged */
+
+#home {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    text-align: center; 
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+     justify-content: center;
+}
+
+.bio img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #home {
+        text-align: center;
+    }
+
+    .bio {
+        flex-direction: column;
+    }
+
+    .bio img {
+        margin-bottom: 10px;
+    }
+}
+
+/* Existing styles remain unchanged */
+
+#about {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.personal-info {
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+
+.quote {
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 3px solid #333;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #about {
+        text-align: center;
+    }
+}
+
+/* Existing styles remain unchanged */
+
+#portfolio {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    #portfolio {
+        text-align: center;
+    }
+}
+
+/* Existing styles remain unchanged */
+
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    #contact {
+        text-align: center;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+
+
+
+
+
+#toTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    #toTopBtn {
+        bottom: 80px;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    max-width: 400px;
+    max-height: 400px;
+}
